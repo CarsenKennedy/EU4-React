@@ -1,0 +1,241 @@
+@import url(//db.onlinewebfonts.com/c/61da8f74ad8b75b7dd9033dda520a437?family=Covik+Sans);
+@font-face {font-family: "Covik Sans"; src: url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.eot"); src: url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.woff") format("woff"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.svg#Covik Sans") format("svg"); } 
+
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    margin-right: 1rem;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+#button img{
+    width: 25px;
+}
+
+.button-style{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #58629b;
+    cursor:pointer;
+}
+
+h1 {
+    font-family:'Covik Sans';
+    font-style:normal;
+    font-weight:bolder;
+    position: left;
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 275%;
+    margin-bottom: 2.0rem;
+    display: block;
+}
+
+table {
+    border-collapse:collapse;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #201c34;
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    padding:15px;
+}
+th {
+    color: #A8ADB9;
+    text-align: left;
+}
+th, td {
+    padding: 10px 15px;
+}
+td:nth-child(3){
+    color:#f6f7f8;
+}
+
+td:nth-child(6){
+    color:#A8ADB9;
+}
+
+tr:nth-child(1){
+    border-bottom: none;
+}
+tbody tr {
+  border-top: 1px solid #eceeff;
+  padding: 10px;
+  text-align: left;
+}
+
+
+
+/* CSS */
+.chatbutton {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.chatbutton:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.chatbutton:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.chatbutton:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.chatbutton:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.chatbutton:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.chatbutton:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.chatbutton:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.chatbutton:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+
+.pagination {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination__arrow {
+  padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 16px;
+    line-height: 1.43;
+    font-size: 13px;
+    min-width: 32px;
+
+  &::before {
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: '';
+    /* By using an em scale, the arrows will size with the font */
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+    border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+  }
+
+  &.left {
+    transform: rotate(-135deg) translate(-50%);
+  }
+
+  &.right {
+    transform: rotate(45deg);
+  }
+}
+
+&.disabled {
+  pointer-events: none;
+
+  .arrow::before {
+    border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+    border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+  }
+
+  &:hover {
+    background-color: transparent;
+    cursor: default;
+  }
+}
+
+
+
+.pagination__button {
+  padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 16px;
+    line-height: 1.43;
+    font-size: 13px;
+    min-width: 32px;
+}
+
+.pagination__button--active {
+  background-color: #333;
+}

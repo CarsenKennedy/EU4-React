@@ -1,0 +1,89 @@
+@import url(//db.onlinewebfonts.com/c/61da8f74ad8b75b7dd9033dda520a437?family=Covik+Sans);
+@font-face {font-family: "Covik Sans"; src: url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.eot"); src: url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.woff") format("woff"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/61da8f74ad8b75b7dd9033dda520a437.svg#Covik Sans") format("svg"); } 
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Covik Sans';
+    max-height: 100%;
+}
+
+.container{
+    font-family: 'Covik Sans';
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(6, 8, 24, 0.9),rgba(0,8,51,0.9)), url(./../images/unknown.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-bar{
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: left;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+#button img{
+    width: 25px;
+}
+
+.button-style{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #58629b;
+    cursor:pointer;
+}
+
+h1 {
+    font-family:'Covik Sans';
+    font-style:normal;
+    font-weight:bolder;
+    display: flex;
+    position: relative;
+    text-align: left;
+    margin: 0.625rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 275%;
+    flex-direction: column;
+    margin-bottom: 2.0rem;
+}
+
+.table-container{
+    height: 900px;
+    margin-top: 50px;
+    overflow: auto;
+    margin-bottom: 250px;
+}
+
+.placeholder.highlight{
+    width: 700px;
+}
