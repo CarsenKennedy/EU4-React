@@ -239,3 +239,119 @@ tbody tr {
 .pagination__button--active {
   background-color: #333;
 }
+
+.OverlayContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  z-index: 9999; /* Ensure the overlay is on top of other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.OverlayPopup {
+  background: rgba(10, 14, 14, 0.98);
+	width: 600px;
+	margin: 10px auto;
+  height: 700px;
+	box-sizing: border-box;
+	padding: 1em;
+	border-radius: 12px;
+	position: relative;
+	overflow: hidden;
+}
+
+.chatHistory {
+  height: 88%;
+  overflow-y: scroll;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+
+.chatTextArea {
+  display: flex;
+  margin-bottom: 2px;
+  width: 100%;
+  position: bottom;
+  padding: .75em;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1em;
+  resize: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+.chatArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: .3em;
+  position: relative;
+}
+#textBox {
+  color: #a3a3a3;
+  background-color: transparent;
+  flex-basis: 90%;
+  border: none;
+  font-size: 13px;
+  outline: none;
+  border: 0;
+}
+.Text {
+  /* dont include picture in text box */
+  /* Make it so that bubble is only slightly bigger than message */
+  color: #a3a3a3;
+  background-color: #1d1c1c;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  max-width: 60%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+}
+#textBoxButton {
+  align-items: right;
+  cursor: pointer;
+  background-color: #8147fc;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  min-width: 30px;
+  font-size: 1.5em;
+  margin-left: 1em;
+  border-radius: 50%;
+  transition: .3s ease;
+  &:active {
+    transform: scale(0.97);
+  }
+}
+svg {
+  margin: 3px -4px;
+  position: relative;
+  stroke: #fff;
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+}
+.Author {
+  /* Add image like a profile picture
+  Now add picture itself */
+  background-image: url("./../images/chatgpt-logo.jpg");
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  margin-right: 0.5em;
+}
