@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/eu4-react/static/css/main.6766d81a.css",
+    "main.js": "/eu4-react/static/js/main.9c806451.js",
+    "static/js/787.b0307f35.chunk.js": "/eu4-react/static/js/787.b0307f35.chunk.js",
+    "static/media/unknown.png": "/eu4-react/static/media/unknown.3a78234431a579be9ab0.png",
+    "static/media/chatgpt-logo.jpg": "/eu4-react/static/media/chatgpt-logo.ed94da699d984d003e72.jpg",
+    "index.html": "/eu4-react/index.html",
+    "main.6766d81a.css.map": "/eu4-react/static/css/main.6766d81a.css.map",
+    "main.9c806451.js.map": "/eu4-react/static/js/main.9c806451.js.map",
+    "787.b0307f35.chunk.js.map": "/eu4-react/static/js/787.b0307f35.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6766d81a.css",
+    "static/js/main.9c806451.js"
+  ]
+}
