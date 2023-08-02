@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/EU4-React/static/css/main.6e165ffa.css",
-    "main.js": "/EU4-React/static/js/main.262805fc.js",
+    "main.js": "/EU4-React/static/js/main.403c986f.js",
     "static/js/787.b0307f35.chunk.js": "/EU4-React/static/js/787.b0307f35.chunk.js",
     "static/media/unknown.png": "/EU4-React/static/media/unknown.3a78234431a579be9ab0.png",
     "static/media/chatgpt-logo.jpg": "/EU4-React/static/media/chatgpt-logo.ed94da699d984d003e72.jpg",
     "index.html": "/EU4-React/index.html",
     "main.6e165ffa.css.map": "/EU4-React/static/css/main.6e165ffa.css.map",
-    "main.262805fc.js.map": "/EU4-React/static/js/main.262805fc.js.map",
+    "main.403c986f.js.map": "/EU4-React/static/js/main.403c986f.js.map",
     "787.b0307f35.chunk.js.map": "/EU4-React/static/js/787.b0307f35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e165ffa.css",
-    "static/js/main.262805fc.js"
+    "static/js/main.403c986f.js"
   ]
 }
