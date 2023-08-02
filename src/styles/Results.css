@@ -239,7 +239,6 @@ tbody tr {
 .pagination__button--active {
   background-color: #333;
 }
-
 .OverlayContainer {
   position: fixed;
   top: 0;
@@ -261,13 +260,11 @@ tbody tr {
 	padding: 1em;
 	border-radius: 12px;
 	position: relative;
-	overflow: hidden;
 }
 
 .chatHistory {
-  height: 88%;
+  height: 83%;
   overflow-y: scroll;
-  padding: 0 1em;
   margin-bottom: 1em;
 }
 
@@ -308,11 +305,13 @@ tbody tr {
   background-color: #1d1c1c;
   border-radius: 6px;
   margin-bottom: 1em;
+  top: -1em;
   max-width: 60%;
   padding: 5px 10px;
+  margin-right: 10px;
   box-sizing: border-box;
+  vertical-align: top;
   display: inline-block;
-  align-items: center;
   justify-content: flex-start;
   flex-direction: row;
 
@@ -335,16 +334,14 @@ tbody tr {
   }
 }
 svg {
-  margin: 3px -4px;
+  margin: 3px 4px 3px 3px;
   position: relative;
   stroke: #fff;
   fill: #fff;
   width: 15px;
   height: 15px;
 }
-.Author {
-  /* Add image like a profile picture
-  Now add picture itself */
+.AI {
   background-image: url("./../images/chatgpt-logo.jpg");
   display: inline-block;
   width: 40px;
@@ -354,4 +351,43 @@ svg {
   background-size: cover;
   background-position: center;
   margin-right: 0.5em;
+}
+
+.User {
+  margin-left: auto;
+  text-align: right;
+  margin-right: 0.5em;
+
+  justify-content: right;
+}
+.Message {
+  display: flex;
+}
+.chatHeader{
+  margin-top: -10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: -5px;
+}
+.closeButton {
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background-color 0.5s, opacity 0.5s;
+}
+
+.closeButton:hover {
+  background-color: #a3a3a3;
+  opacity: 1;
+  outline-offset: -2px;
+}
+#closeIcon{
+  width: 30px;
+  height: 30px;
+  fill: none;
 }

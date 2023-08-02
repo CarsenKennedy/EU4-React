@@ -8,10 +8,18 @@ import ChatOverlay from "./Components/ChatOverlay";
 
 const Home = () => {
     const [showChat,setShowChat] = useState(false);
+    const [isChatVisible,setIsChatVisible] = useState(false);
+
 
     const toggleChat = () => {
-        console.log("Toggle Chat Called");
-        setShowChat((prevshowChat) => !prevshowChat);
+        if(!showChat) {
+            setShowChat(true);
+        }
+        setIsChatVisible((prevIsChatVisible) => !prevIsChatVisible);
+    }
+
+    const handleChatHide = () => {
+        setIsChatVisible(false);
     }
 
     return (
@@ -21,7 +29,9 @@ const Home = () => {
                 <SearchAndTableContainer />
                 <ChatButton onClick={toggleChat} />
             </div>
-            {showChat && <ChatOverlay />}
+            {showChat && <ChatOverlay onChatHide={handleChatHide}
+                                     isVisible={isChatVisible}
+                                />}
         </div>
     )
 }
