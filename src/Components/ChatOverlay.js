@@ -116,8 +116,8 @@ export default class ChatOverlay extends React.Component {
                     </div>
                     <div className="chatHistory">
                         <Message className="Message AI" data = {{text: "Hello, I am ChatGPT, how can I help you?", author: "ChatGPT"}} />
-                        {messages.map((message) => (
-                            <Message data = {message} />
+                        {messages.map((message,index) => (
+                            <Message key={index} data = {message} />
                         ))}
                         <div ref = {el => {this.el = el;}} className="chatHistoryBottom"  />
                     </div>
@@ -125,7 +125,7 @@ export default class ChatOverlay extends React.Component {
                         <form className="chatArea" onSubmit={this.handleMessageSend}>
                             <input id = "textBox" type="text" ref={this.inputRef} placeholder="Ask ChatGPT a question..."></input>
                             <button id ="textBoxButton" type ="submit">
-                                <svg id = "chatsend" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="1036">
+                                <svg id = "chatsend" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" data-reactid="1036">
                                     <line x1="22" y1="2" x2="11" y2="13"></line>
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                                 </svg>

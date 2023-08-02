@@ -23,15 +23,15 @@ export default class SearchAndTableContainer extends React.Component {
         const { searchSubmitted } = this.state;
         return( 
 
-            <div class ={`placeholder ${searchSubmitted ? '' : 'highlight'}`}>
+            <div className ={`placeholder ${searchSubmitted ? '' : 'highlight'}`}>
                 { searchSubmitted ? (
-                <div class="functioncontainer">
+                <div className="functioncontainer">
                     <SearchBarForm onSearch={this.handleSearch} searchSubmitted={this.state.searchSubmitted} />
                     <FilterableAchievementTable stateProp={this.state.searchTerm} searchSubmitted={this.state.searchSubmitted} />
                 </div>
                 ): (
 
-                    <div class="functioncontainer">
+                    <div className="functioncontainer">
                     <SearchBarForm onSearch={this.handleSearch} searchSubmitted={this.state.searchSubmitted} />
                 </div>
                 )}

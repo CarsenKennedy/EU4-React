@@ -24,7 +24,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className="container" showChat={showChat}>
+            <div className="container">
                 <h1>Eurosearcher</h1>
                 <SearchAndTableContainer />
                 <ChatButton onClick={toggleChat} />
