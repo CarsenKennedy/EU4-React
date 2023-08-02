@@ -1,6 +1,5 @@
 import React from "react";
 import './../styles/style.css';
-import logo from './../images/search.png'
 
 export default class SearchBarForm extends React.Component {
     constructor(props) {

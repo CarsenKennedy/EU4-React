@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import './styles/style.css'
 import './styles/Results.css'
-import SearchBarForm from './Components/SearchBarForm'
 import SearchAndTableContainer from "./Components/SearchandTableContainer";
 import ChatButton from "./Components/ChatButton";
 import ChatOverlay from "./Components/ChatOverlay";

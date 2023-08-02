@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Pagination from "./Pagination";
 
 export default class FilterableAchievementTable extends React.Component {
@@ -26,7 +26,7 @@ export default class FilterableAchievementTable extends React.Component {
   }
 
   fetchAchievements(searchTerm) {
-    fetch(`http://127.0.0.1:5000/api/v1/achievement/search/${searchTerm}`)
+    fetch(`https://eu4-api.onrender.com/api/v1/achievement/search/${searchTerm}`)
       .then((response) => response.json())
       .then((data) => {
         this.setState({ achievements: data });

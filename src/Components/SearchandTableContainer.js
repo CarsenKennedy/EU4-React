@@ -1,7 +1,6 @@
 import React from "react";
 import FilterableAchievementTable from "./FilterableAchievementTable";
 import SearchBarForm from "./SearchBarForm";
-import Results from "../Results";
 
 export default class SearchAndTableContainer extends React.Component {
     constructor(props){
